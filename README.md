@@ -33,3 +33,11 @@ plugin section:
  we needed gsap
 
  npm i @gsap/react gsap
+
+ for your own images or texture in monitor use
+  <meshMatcapMaterial map={screenTxt} />
+
+
+  for herocamera we needed extra package
+
+  npm i maath

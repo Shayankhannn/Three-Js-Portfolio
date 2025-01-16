@@ -19,7 +19,7 @@ const Target = (props) => {
     })
 
   return (
-    <mesh {...props} ref={targetRef}>
+    <mesh {...props} ref={targetRef} scale={1.5}>
         <primitive object={scene}/>
     </mesh>
 
