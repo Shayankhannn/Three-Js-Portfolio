@@ -41,3 +41,6 @@ plugin section:
   for herocamera we needed extra package
 
   npm i maath
+
+  for globe installed package :
+  npm i react-globe.gl  
