@@ -29,3 +29,7 @@ plugin section:
 
 
  leva didnt worked for some reason
+
+ we needed gsap
+
+ npm i @gsap/react gsap
