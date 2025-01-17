@@ -44,3 +44,7 @@ plugin section:
 
   for globe installed package :
   npm i react-globe.gl  
+
+  for getting email from people use email js
+
+  npm i @emailjs/browser
