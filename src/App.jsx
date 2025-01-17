@@ -11,6 +11,7 @@ const App = () => {
       <Hero/>
       <About/>
       <Projects/>
+      
     </main>
   )
   
