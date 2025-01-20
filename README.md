@@ -48,3 +48,5 @@ plugin section:
   for getting email from people use email js
 
   npm i @emailjs/browser
+
+  3d character ready player me and animation mixamo
