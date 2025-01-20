@@ -3,7 +3,7 @@ import { Canvas } from "@react-three/fiber"
 import HackerRoom from "../components/HackerRoom"
 import { Suspense } from "react"
 import CanvasLoader from "../components/CanvasLoader"
-import { PerspectiveCamera, Ring } from "@react-three/drei"
+import { PerspectiveCamera } from "@react-three/drei"
 import { useMediaQuery } from "react-responsive"
 import { calculateSizes } from "../Data"
 import Target from "../components/Target"
@@ -112,8 +112,7 @@ const Hero = () => {
               </div>
 
 
-    </section>  
-  
+    </section>    
   )
 }
 
