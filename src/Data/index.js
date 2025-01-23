@@ -286,3 +286,20 @@ export const navLinks = [
       animation: 'salute',
     },
   ];
+  
+  export const socialMedia = [
+    {
+      id: 1,
+      link:'https://github.com/Shayankhannn',
+      img: "/assets/git.svg",
+    },
+    {
+      id: 2,
+      img: "/assets/insta.svg",
+    },
+    {
+      id: 3,
+      link: 'https://www.linkedin.com/in/shayan-khan-534ba7288/',      
+      img: "/assets/link.svg",
+    },
+  ];

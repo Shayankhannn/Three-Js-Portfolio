@@ -1,6 +1,10 @@
 import Globe from "react-globe.gl"
 import Button from "../components/Button"
-import { useState } from "react";
+import { Suspense, useState } from "react";
+import TechStack from "../components/TechStack";
+import { Canvas } from "@react-three/fiber";
+import {  OrbitControls } from "@react-three/drei";
+import CanvasLoader from "../components/CanvasLoader";
 
 
  
@@ -30,7 +34,19 @@ const About = () => {
 
     <div className="col-span-1 xl:row-span-3">
     <div className="grid-container">
-      <img src="/assets/grid2.png" alt="grid2" className="w-full sm:w-[276px] h-fit object-contain"  />
+      {/* <img src="/assets/grid2.png" alt="grid2" className="w-full sm:w-[276px] h-fit object-contain"  /> */}
+      <Canvas>
+                    <ambientLight intensity={1}/>
+                    <directionalLight position={[10, 10, 5]} />
+                    
+                    <Suspense fallback={<CanvasLoader/>}>
+                            <group  position={[0.1,-2,0]} rotation={[0,-0.1,0]}>
+                                <TechStack  />
+                            </group>
+                        </Suspense>
+                   
+                    <OrbitControls enableZoom={false} maxPolarAngle={Math.PI/2}/>
+                </Canvas>
       <div className="">
 <p className="grid-headtext">Tech Stack</p>
 <p className="grid-subtext">I specialized in Js/Ts with the focus on react and next js</p>
@@ -44,13 +60,13 @@ const About = () => {
     
       <div className="rounded-3xl w-full sm:h-[326px] h-fit flex justify-center items-center">
           <Globe
-          height={326}
-          width={326}
+          height={386}
+          width={386}
           backgroundColor="rgba(0,0,0,0)"
           backgroundImageOpacity={0.5}
           showAtmosphere
           showGraticules
-          globeImageUrl="//unpkg.com/three-globe/example/img/earth-day.jpg"
+          globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"
 bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png"
 labelsData={[
   {lat:40,lng:-100,text:"I'm here",color:"white",size:20},
